@@ -100,7 +100,7 @@ function Participants() {
       console.log("participantsData is: ", dataToSend);
 
 
-      const response = await axios.post('http://localhost:5000/participent', dataToSend, {
+      const response = await axios.post('BACKEND_URL/participent', dataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
