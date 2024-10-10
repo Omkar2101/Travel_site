@@ -30,13 +30,7 @@ const EventCard = ({ imageUrl, heading,onClick }) => {
           {heading}
         </h1>
       </div>
-      {/* Icons */}
-      <div className="absolute bottom-4 w-full flex justify-center space-x-6 text-white">
-        <i className=" text-lg"></i>
-        <i className=" text-lg"></i>
-        <i className=" text-lg"></i>
-        <i className=" text-lg"></i>
-      </div>
+      
     </div>
   );
 };

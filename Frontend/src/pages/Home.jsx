@@ -77,7 +77,7 @@ return () => clearInterval(intervalId); // Clear interval on component unmount
     {imageUrl:"https://plus.unsplash.com/premium_photo-1697730421382-bc8dd92f83ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fEpvZGhwdXJ8ZW58MHwwfDB8fHww",heading:"Grand Rajasthan et Taj",goto:"grand-rajasthan"},
     {imageUrl:"https://media.istockphoto.com/id/481494314/photo/gwalior-fort.webp?a=1&b=1&s=612x612&w=0&k=20&c=h8E5w6dI9Khz4Ny4-x8GoYqjKt2vV1IcylcOUpUJGvg=",heading:"Palais et temples : Khajurao, Orcha et Gwalior",goto:"gwalior"},
     {imageUrl:"https://media.istockphoto.com/id/537988165/photo/varanasi.webp?a=1&b=1&s=612x612&w=0&k=20&c=12qNJSzaD01LG-v0C0VZhv6tp7HTLnGtBK-a0rvpRiw=",heading:"Villes sacrées du Gange : édition Varanasi",goto:"varanasi"},
-    {imageUrl:"https://images.unsplash.com/photo-1548013146-72479768bada?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYXV0aWZ1bCUyMHRvdXJpc3QlMjBwbGFsY2VzJTIwaW5kaWF8ZW58MHwwfDB8fHww",heading:"Agra",goto:"manali"},
+    
     // {imageUrl:"https://plus.unsplash.com/premium_photo-1661963369594-9b25cd53be4d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGJlYXV0aWZ1bCUyMHRvdXJpc3QlMjBwbGFsY2VzJTIwaW5kaWF8ZW58MHwwfDB8fHww",heading:"Udaipur"},
 ]
 
@@ -199,7 +199,7 @@ const complementry = [
    
 
     {/* Highlited events */}
-    <div className='highlighted overflow-x-hidden overflow-y-hidden w-screen bg-gray-200 h-[670px] p-10 px-4 lg:px-40 '>
+    <div className='highlighted overflow-x-hidden overflow-y-hidden w-screen bg-gray-200 h-[720px] p-10 px-4 lg:px-40 '>
       <div className='flex flex-col p-6'>
         <h1 className='font-medium text-3xl text-orange-700'>Destination Préférée des Français</h1>
         {/* <TranslateWidget></TranslateWidget> */}
@@ -217,20 +217,23 @@ const complementry = [
     </div>
 
     {/*Complementry events */}
-    <div className='Monsoon w-screen  overflow-x-hidden overflow-y-hidden   bg-gray-800 h-[670px] p-10 px-4 lg:px-40'>
-      <div className='flex flex-col p-6'>
-        <h1 className='font-medium text-3xl text-orange-700'>Complementry Events</h1>
-        <p className='text-gray-600 text-xl font-medium'>Recommended camps by our Instructors</p>
-        {/* //by the team */}
+    {/* Complementary Events */}
+<div className='Monsoon w-screen overflow-hidden bg-gray-800 h-auto p-10 px-4 lg:px-40'>
+  <div className='flex flex-col p-6'>
+    <h1 className='font-medium text-3xl text-orange-700'>Complementary Events</h1>
+    <p className='text-gray-600 text-xl font-medium'>Recommended camps by our Instructors</p>
+  </div>
+  
+  {/* Events Container */}
+  <div className="events flex items-center justify-start overflow-x-auto gap-4 p-4">
+    {complementry.map((item, index) => (
+      <div key={index} className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px]">
+        <EventCard imageUrl={item.coverimg} heading={item.EventName} />
       </div>
-      <div className="events flex items-center justify-start overflow-x-auto gap-8 p-4">
-        {complementry.map((item, index) => (
-          <div key={index} className="min-w-[500px]">
-            <EventCard imageUrl={item.coverimg} heading={item.EventName} />
-          </div>
-        ))}
-      </div>
-    </div>
+    ))}
+  </div>
+</div>
+
 
     {/* Weekend events
     <div className='Weekend w-screen overflow-x-hidden overflow-y-hidden bg-gray-200 h-[670px] p-10  px-4 lg:px-40'>
@@ -247,7 +250,7 @@ const complementry = [
       </div>
     </div> */}
 
-    <div className='Weekend overflow-x-hidden w-screen bg-gray-100 h-[600px] p-10 px-4 lg:px-40'>
+    <div className='Weekend overflow-x-hidden overflow-y-hidden w-screen bg-gray-100 h-[950px] p-10 px-4 lg:px-40'>
       <div className='flex flex-col p-6'>
         <h1 className='font-medium text-3xl text-orange-700'>Experience Yourself</h1>
         <p className='text-gray-600 text-xl font-medium'>Exclusive Footages from our camps</p>
