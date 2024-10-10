@@ -95,7 +95,7 @@ function Profile() {
       });
 
       // Make the POST request
-      const response = await axios.post("http://localhost:5000/profile", data, {
+      const response = await axios.post("BACKEND_URL/profile", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
