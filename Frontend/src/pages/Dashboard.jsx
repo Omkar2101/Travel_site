@@ -24,7 +24,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const Allresponse = await axios.get(`http://localhost:5000/api/users/${useridFromCookie}`, {
+        const Allresponse = await axios.get(`BACKEND_URL/api/users/${useridFromCookie}`, {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ function Dashboard() {
 
         const fetchAllUserData = async () => {
           try {
-            const response = await axios.get(`http://localhost:5000/api/alluser/${useridFromCookie}`, {
+            const response = await axios.get(`BACKEND_URL/api/alluser/${useridFromCookie}`, {
               headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
