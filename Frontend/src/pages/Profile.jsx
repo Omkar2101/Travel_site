@@ -109,7 +109,7 @@ function Profile() {
           firstName: "",
           lastName: "",
           passportnumber: "",
-          birthDate: dayjs(''),
+          birthDate: "",
           gender: "",
           // height: "",
           // weight: "",
