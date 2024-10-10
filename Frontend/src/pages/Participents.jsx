@@ -19,6 +19,7 @@ function Participants() {
   const {amount, eventName } = location.state || {};
   console.log('Amount is: ', amount)
   console.log('Event Name is: ', eventName)
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 
   const [participantsData, setParticipantsData] = useState([{}]); // Start with one participant form
@@ -100,7 +101,7 @@ function Participants() {
       console.log("participantsData is: ", dataToSend);
 
 
-      const response = await axios.post('BACKEND_URL/participent', dataToSend, {
+      const response = await axios.post(`${BACKEND_URL}/participent`, dataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

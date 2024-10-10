@@ -21,6 +21,9 @@ function Login() {
   const [showOtp, setShowOtp] = useState(false);
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  console.log("Url is:", BACKEND_URL)
+
 
   
 
@@ -33,6 +36,10 @@ function Login() {
   }, [navigate]);
 
   function onCaptchVerify() {
+    if (window.recaptchaVerifier) {
+      window.recaptchaVerifier.clear(); // Clear any previous instance
+    }
+
     if (!window.recaptchaVerifier) {
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', 
         {
@@ -125,7 +132,7 @@ function Login() {
   
       let user_Id;
       try {
-        const datas = await axios.get(`BACKEND_URL/user/${formatPh}`, {
+        const datas = await axios.get(`${BACKEND_URL}/user/${formatPh}`, {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',

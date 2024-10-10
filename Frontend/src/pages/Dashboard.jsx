@@ -15,7 +15,11 @@ function Dashboard() {
   const [loading, setLoading] = useState(true); // Loading state for data fetching
   const useridFromCookie = Cookies.get("user_id");
   const location = useLocation();
-  
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+  console.log("Url is:", BACKEND_URL)
+  console.log(import.meta.env);
+
+
 
   const {amount, eventName } = location.state || {};
   console.log("from dash",eventName);
@@ -24,7 +28,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const Allresponse = await axios.get(`BACKEND_URL/api/users/${useridFromCookie}`, {
+        const Allresponse = await axios.get(`${BACKEND_URL}/api/users/${useridFromCookie}`, {
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
@@ -37,7 +41,7 @@ function Dashboard() {
 
         const fetchAllUserData = async () => {
           try {
-            const response = await axios.get(`BACKEND_URL/api/alluser/${useridFromCookie}`, {
+            const response = await axios.get(`${BACKEND_URL}/api/alluser/${useridFromCookie}`, {
               headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',

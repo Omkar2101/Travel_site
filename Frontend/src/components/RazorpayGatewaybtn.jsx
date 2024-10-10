@@ -80,6 +80,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const RazorpayGatewaybtn = ({ amount }) => {
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -114,7 +115,7 @@ const RazorpayGatewaybtn = ({ amount }) => {
 
     // Create an order by calling backend
     const result = await axios.post(
-      "BACKEND_URL/api/payment/create-order",
+      `${BACKEND_URL}/api/payment/create-order`,
       { amount },
       {
         headers: {

@@ -14,6 +14,7 @@ import TextField from '@mui/material/TextField';
 import "react-toastify/dist/ReactToastify.css";
 
 function Profile() {
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
   const [toastmsg, setToastmsg] = useState("Please fill all the details");
   const notify = () =>
     toast(toastmsg, {
@@ -95,7 +96,7 @@ function Profile() {
       });
 
       // Make the POST request
-      const response = await axios.post("BACKEND_URL/profile", data, {
+      const response = await axios.post(`${BACKEND_URL}/profile`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
