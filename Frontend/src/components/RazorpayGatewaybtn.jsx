@@ -114,7 +114,7 @@ const RazorpayGatewaybtn = ({ amount }) => {
 
     // Create an order by calling backend
     const result = await axios.post(
-      "http://localhost:5000/api/payment/create-order",
+      "BACKEND_URL/api/payment/create-order",
       { amount },
       {
         headers: {
