@@ -16,8 +16,8 @@ function Dashboard() {
   const useridFromCookie = Cookies.get("user_id");
   const location = useLocation();
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-  console.log("Url is:", BACKEND_URL)
-  console.log(import.meta.env);
+  // console.log("Url is:", BACKEND_URL)
+  // console.log(import.meta.env);
 
 
 
