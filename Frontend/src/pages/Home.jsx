@@ -85,16 +85,19 @@ const complementry = [
   {
       EventName: `Morning Jeep Safari - Jodhpur`,
       coverimg:['./Complementry/Jeep_safari/Cover.jpg'],
+      topage:'jeep'
      
   },
   {
       EventName: 'Bagru Block Printing Workshop - Jaipur',
       coverimg:['./Complementry/Block_Printing/Block_paint/Cover.jpg'],
+      topage:'paint'
    
   },
   {
       EventName: 'Yoga at Mangal Yoga - Jodhpur ',
       coverimg:['./Complementry/Yoga/Yoga_mangal/Cover.jpg'],
+      topage:'yoga'
      
   },
 ];
@@ -228,7 +231,9 @@ const complementry = [
   <div className="events flex items-center justify-start overflow-x-auto gap-4 p-4">
     {complementry.map((item, index) => (
       <div key={index} className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px]">
-        <EventCard imageUrl={item.coverimg} heading={item.EventName} />
+        {console.log(item.topage)}
+        
+        <EventCard onClick={()=>(Navigate(item.topage))} imageUrl={item.coverimg} heading={item.EventName} />
       </div>
     ))}
   </div>

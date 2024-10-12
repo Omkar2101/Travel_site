@@ -17,12 +17,12 @@ import Componentimg from '../../components/Componentimg';
 function Paint() {
 
     const eventName = 'Bagru Block Printing Workshop '
-    // const amount = 799;
-    const duration = "2 Hours "
+     const info ='*There is no need to pay any tips or fees for these yoga classes. They are offered to you free of charge as part of your Jodhpur experience'
+    const duration = "45 min to 1 hr "
     const Starttime="Morning/Evening"
     const age = "4-50 years"
-    const tagLine ="This is a typical itinerary for this product"
-    const description = 'Bagru, village near Jaipur has made its mark on the textile industry map around the world. Short sojourn to Bagru on our signature experience is a sublime blend of handcrafted village tour and textile workshop.'
+    const tagLine ="Complimentary Classes: Enjoy two free yoga sessions during your stay in Jodhpur:"
+    const description = 'Welcome to Jodhpur! As part of your travel experience, we are pleased to offer you complimentary yoga sessions at Mangal Yoga, renowned as the premier yoga facility in Jodhpur. Operated by a dedicated family, Mangal Yoga is led by the esteemed yoga instructor Mangalaram Patel, who brings years of expertise and passion to his practice'
 
    
     const [open, setOpen] = useState(false);
@@ -33,9 +33,9 @@ function Paint() {
     
 
     const images  = [
-        "./Complementry/Block_Printing/Block_paint/1.jpg",
-        "./Complementry/Block_Printing/Block_paint/2.jpg",
-        "./Complementry/Block_Printing/Block_paint/7.jpg",
+        "./Complementry/Yoga/Yoga_mangal/4.jpg",
+        "./Complementry/Yoga/Yoga_mangal/2.jpg",
+        "./Complementry/Yoga/Yoga_mangal/6.jpg",
        
         
     ]
@@ -45,72 +45,40 @@ function Paint() {
         {
             // heading: 'Arrival in Delhi',
             // description: 'Visit to India Gate and Connaught Place.',
-            heading: 'An experienced English speaking textile expert to lead',
-            image: './Complementry/Block_Printing/Block_paint/6.jpg',
-            details: [
-                { title: 'Arrival', content: 'Late morning or early afternoon' },
-                { title: 'Activities', content: 'Check into the hotel and relax. Evening visit to India Gate and Connaught Place' },
-                { title: 'Overnight', content: 'Delhi' }
-            ]
+            heading: 'Morning Session: Begin the following day refreshed and revitalized with another invigorating yoga session',
+            image: './Complementry/Yoga/Yoga_mangal/1.jpg',
+           
         },
         {
            
             description: 'Enjoy the light and sound show at the Red Fort or visit the Lotus Temple.',
             image: '',
-            details: [
-                { title: 'Morning', content: 'Visit Red Fort, Jama Masjid, and Chandni Chowk.' },
-                { title: 'Afternoon', content: 'Visit Qutub Minar and Humayun\'s Tomb.' },
-                { title: 'Evening', content: 'Enjoy a light and sound show at the Red Fort or visit the Lotus Temple.' },
-                { title: 'Overnight', content: 'Delhi' }
-            ]
+           
         },
         {
-            heading: 'A village walk visiting different families of Block Printers',
+            
             description: 'Visit Agra Fort and Mehtab Bagh (Sunset view of Taj Mahal).',
-            image: './Complementry/Block_Printing/Block_paint/2.jpg',
-            details: [
-                { title: 'Check-out', content: '8:00 AM.' },
-                { title: 'Distance', content: '230 km (4-5 hours by road).' },
-                { title: 'Arrival', content: 'Early afternoon.' },
-                { title: 'Activities', content: 'Check into the hotel. Visit Agra Fort and Mehtab Bagh (sunset view of the Taj Mahal).' },
-                { title: 'Overnight', content: 'Agra' }
-            ]
+            image: './Complementry/Yoga/Yoga_mangal/2.jpg',
+            
         },
         {
             // heading: 'Explore Agra',
-            description: 'Visit Itimad-ud-Daulah (Baby Taj) and local markets.',
-            image: './Complementry/Block_Printing/Block_paint/3.jpg',
-            details: [
-                { title: 'Early Morning', content: 'Sunrise visit to the Taj Mahal.' },
-                { title: 'Late Morning', content: 'Return to the hotel for breakfast and rest.' },
-                { title: 'Afternoon', content: 'Visit Itimad-ud-Daulah (Baby Taj) and local markets.' },
-                { title: 'Overnight', content: 'Agra' }
-            ]
+            heading: 'Evening Session: Upon your arrival in Jodhpur, unwind with a calming yoga class designed to ease the fatigue from your journe',
+            description: 'Morning Session: Begin the following day refreshed and revitalized with another invigorating yoga session',
+            image: './Complementry/Yoga/Yoga_mangal/3.jpg',
+           
         },
         {
-            heading: 'A self printed scarf as a Souvenir with our compliments',
-            description: 'Stroll around local markets or enjoy a traditional Rajasthani dinner at Chokhi Dhani.',
+            heading: '',
+            description: '',
             image: '',
-            details: [
-                { title: 'Check-out', content: '8:00 AM.' },
-                { title: 'Distance', content: '240 km (5-6 hours by road, including stop).' },
-                { title: 'Enroute', content: 'Visit Fatehpur Sikri (1-hour stop).' },
-                { title: 'Arrival', content: 'Early evening' },
-                { title: 'Activities', content: 'Check into the hotel and relax.' },
-                { title: 'Evening', content: 'Stroll around local markets or enjoy a traditional Rajasthani dinner at Chokhi Dhani.' },
-                { title: 'Overnight', content: 'Jaipur' },
-            ]
+          
         },
         {
-            // heading: 'Explore Jaipur',
-            description: 'Visit Amber Fort and take an elephant ride.',
-            image: './Complementry/Block_Printing/Block_paint/5.jpg',
-            details: [
-                { title: 'Morning', content: 'Visit Amber Fort and take an elephant ride. Stop by Jal Mahal (Water Palace) on the way back.' },
-                { title: 'Afternoon', content: 'Visit City Palace and Jantar Mantar.' },
-                { title: 'Evening', content: 'Explore the local markets and Hawa Mahal (Palace of Winds).' },
-                { title: 'Overnight', content: 'Jaipur' },
-            ]
+             heading: 'The classes will focus on therapeutic yoga, which aims to relax and rejuvenate your body, ensuring you feel both relaxed and energized',
+            description: '.',
+            image: './Complementry/Yoga/Yoga_mangal/6.jpg',
+            
         },
      
         
@@ -179,7 +147,7 @@ function Paint() {
                         key={currentImgIndex}
                         src={images[currentImgIndex]}
                         alt={`Slide ${currentImgIndex}`}
-                        className="absolute w-full h-full object-center"
+                        className="absolute w-full h-full object-cover"
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -100, opacity: 0 }}
@@ -195,6 +163,7 @@ function Paint() {
             <div className="px-4 md:px-40 flex flex-col lg:flex-row gap-10">
                 <div className="w-full lg:w-4/5">
                     <h1 className="text-orange-600 text-3xl font-quicksand pt-5">{eventName}</h1>
+                    <h2 className="text-orange-600 font-semibold text-sm font-quicksand pt-5">{info}</h2>
                     <h2 className="text-md text-gray-500 font-quicksand pt-2">{tagLine}</h2>
 
                     <div className="flex flex-col md:flex-row gap-10 pt-6">
@@ -261,23 +230,7 @@ function Paint() {
 
 
 
-            {/* Attractions
-            <Attractions attractions={attractions}/> */}
-
-
-
-
-            {/* Booking at Bottom
-            <div className='mt-5 mb-5'>
-                <div id="target-point" ></div>
-                 <PackageSelector eventName={eventName} amount={amount}/>
-             </div> */}
-
-
-
-            {/* Terms and Conditions
-            <Rules inclusion={Inclusion} exclusion={Exclusion}/> */}
-
+         
 
 
             <Footer></Footer>

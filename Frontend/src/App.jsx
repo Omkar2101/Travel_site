@@ -18,6 +18,7 @@ import Varanasi from './pages/Event/Varanasi';
 import Gwalior from './pages/Event/Gwalior';
 import Jeep from './pages/Complementry/Jeep'
 import Paint from './pages/Complementry/Paint'
+import Yoga from './pages/Complementry/Yoga'
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/jeep" element={<Jeep />} />
             <Route path="/paint" element={<Paint />} />
+            <Route path="/yoga" element={<Yoga />} />
             {/* <Route path="/dashboard/:firstName" element={<Dashboard />} /> */}
 
           </Routes>
