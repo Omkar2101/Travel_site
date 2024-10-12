@@ -22,7 +22,7 @@ function Login() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-  console.log("Url is:", BACKEND_URL)
+  // console.log("Url is:", BACKEND_URL)
 
 
   
@@ -35,15 +35,21 @@ function Login() {
     }
   }, [navigate]);
 
+  function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  }
+
   function onCaptchVerify() {
     if (window.recaptchaVerifier) {
       window.recaptchaVerifier.clear(); // Clear any previous instance
     }
 
+    const size = isMobile() ? 'normal' : 'invisible';
+
     if (!window.recaptchaVerifier) {
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', 
         {
-          size: 'invisible',
+          size: size,
           callback: (response) => {
             // onSignup()
           },
