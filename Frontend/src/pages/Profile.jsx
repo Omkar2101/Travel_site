@@ -31,8 +31,6 @@ function Profile() {
     lastName: "",
     birthDate: "",
     gender: "",
-    // height: "",
-    // weight: "",
     email: "",
     mobile: "",
     bloodGroup: "",
@@ -92,9 +90,12 @@ function Profile() {
     try {
       // Prepare the form data for submission
       const data = new FormData();
+
       Object.keys(formData).forEach((key) => {
         data.append(key, formData[key]);
       });
+
+      console.log(data);
 
       // Make the POST request
       const response = await axios.post(`${BACKEND_URL}/profile`, data, {
@@ -113,8 +114,6 @@ function Profile() {
           passportnumber: "",
           birthDate: "",
           gender: "",
-          // height: "",
-          // weight: "",
           email: "",
           mobile: "",
           bloodGroup: "",
@@ -266,25 +265,6 @@ function Profile() {
                   className="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"
                 />
               </div>
-              {/* <div className="">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Birth Date
-                </label>
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                  <DatePicker
-                   value={dayjs(formData.birthDate)} // Ensure this is a Dayjs object
-                   onChange={handleChange}
-                   slotProps={{
-                    textField: {
-                      className: "mt-1  block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500", // Tailwind CSS classes
-                      placeholder: "MM/DD/YYYY", // Optional placeholder for better UX
-                      required: true,
-                    },
-                  }}
-                    
-                  />
-                </LocalizationProvider>
-              </div> */}
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -316,7 +296,7 @@ function Profile() {
                   required
                   maxLength="12"
                   className="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"
-                  placeholder="+XX 1234567890"
+                  placeholder="XX 1234567890"
                 />
               </div>
 
