@@ -19,6 +19,9 @@ import Gwalior from './pages/Event/Gwalior';
 import Jeep from './pages/Complementry/Jeep'
 import Paint from './pages/Complementry/Paint'
 import Yoga from './pages/Complementry/Yoga'
+import Blog from './pages/Blog';
+import CreateBlog from './components/CreateBlog';
+import BlogDetails from './components/BlogDetails';
 
 const App = () => {
   return (
@@ -44,6 +47,10 @@ const App = () => {
             <Route path="/paint" element={<Paint />} />
             <Route path="/yoga" element={<Yoga />} />
             {/* <Route path="/dashboard/:firstName" element={<Dashboard />} /> */}
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/create-blog" element={<CreateBlog />} />
+            <Route path="/blog/:id" element={<BlogDetails />} />
+            
 
           </Routes>
         

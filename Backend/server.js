@@ -43,6 +43,7 @@ const ParticipentRoute = require("./routes/ParticipentRoute")
 const CheckUserRoute = require('./routes/CheckIfUserExist')
 const GetAllUsersRoute =require("./routes/GetAllUsers")
 const paymentRoutes = require('./routes/PaymentRoutes');
+const BlogRoute = require("./routes/BlogRoute");
 //Mongoose model
 const Profile = require('./models/Profile');
 
@@ -53,6 +54,7 @@ app.use('/user', CheckUserRoute);
 app.use('/participent',ParticipentRoute)
 app.use('/api',GetAllUsersRoute);
 app.use('/api',paymentRoutes);
+app.use('/blog/api',BlogRoute)
 
 
 
