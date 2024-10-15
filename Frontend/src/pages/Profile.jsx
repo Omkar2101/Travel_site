@@ -85,7 +85,7 @@ function Profile() {
       notify();
       setLoading(false);
       return;
-    }
+    } 
 
     try {
       // Prepare the form data for submission

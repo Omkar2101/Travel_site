@@ -4,7 +4,7 @@ const ProfileSchema = new mongoose.Schema({
     firstName: {
         type: String,
         // Uncomment if required: required: [true, 'First name is required'],
-        // Uncomment if needed: trim: true,  // Trims whitespace from the input
+        // Uncomment if needed: trim: true,  // Trims whitespace from the input 
     },
     lastName: {
         type: String,

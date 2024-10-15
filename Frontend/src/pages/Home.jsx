@@ -218,7 +218,7 @@ const complementry = [
         ))}
       </div>
     </div>
-
+ 
     {/*Complementry events */}
     {/* Complementary Events */}
 <div className='Monsoon w-screen overflow-hidden bg-gray-800 h-auto p-10 px-4 lg:px-40'>
