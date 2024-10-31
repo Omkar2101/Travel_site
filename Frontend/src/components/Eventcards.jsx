@@ -60,7 +60,7 @@ function Eventcards({ image, title, price, duration }) {
           <div className="font-semibold text-orange-700 text-[14px] mb-2">{title}</div>
           <div className='flex gap-1 items-center'>
             <p className="text-gray-600 text-sm">
-              From <span className="font-bold">€ {price}/- &nbsp;</span> 
+              From <span className="font-bold">₹ {price}/- &nbsp;</span> 
             </p>
             <p className="text-gray-600 text-sm font-bold flex items-center mt-1">
               <span className='mr-2'><RiCalendarScheduleLine size={18} /></span> {duration}

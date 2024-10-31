@@ -16,7 +16,7 @@ import ImageSlider from '../../components/ImageSlider';
 function Varanasi() {
 
     const eventName = 'Varanasi Edition'
-    const amount = 1200;
+    const amount = 109676;
     const tagLine = 'Experience the Spiritual Journey'
     const duration = "7 Nights/ 8 Days"
     const age = "All ages welcome"
@@ -239,7 +239,7 @@ function Varanasi() {
                 style={{ pointerEvents: isVisible ? 'auto' : 'none' }}
                 >
                 <div className="flex flex-row justify-around items-center">
-                    <h1 className="font-quicksand">From €{amount} / person
+                    <h1 className="font-quicksand">From ₹{amount} / person
                        <br /> <span  className="font-quicksand text-red-500">*Pay 25% now and book you seat</span>
                     </h1>
                     <button

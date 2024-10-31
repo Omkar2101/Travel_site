@@ -85,20 +85,20 @@ import Ratansinghimg from "../assets/RatanSingh.jpg";
 
 const Timeline = () => {
   const timelineItems = [
-    {
-      id: 1,
-      side: "right",
-      bgColor: "bg-gray-400",
-      img: Ratansinghimg,
-    },
-    {
-      id: 2,
-      side: "left",
-      bgColor: "bg-gray-600",
-      title: "Ratan Singh",
-      description:
-        "A French language expert and seasoned Francophone guide with over 25 years of experience. Ratan's journey began in Jaisalmer, Rajasthan, and led him to France at a young age, where he developed his travel expertise.",
-    },
+    // {
+    //   id: 1,
+    //   side: "right",
+    //   bgColor: "bg-gray-400",
+    //   img: Ratansinghimg,
+    // },
+    // {
+    //   id: 2,
+    //   side: "left",
+    //   bgColor: "bg-gray-600",
+    //   title: "Ratan Singh",
+    //   description:
+    //     "A French language expert and seasoned Francophone guide with over 25 years of experience. Ratan's journey began in Jaisalmer, Rajasthan, and led him to France at a young age, where he developed his travel expertise.",
+    // },
     {
       id: 3,
       side: "right",

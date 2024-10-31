@@ -184,7 +184,7 @@ const complementry = [
 
   <div className="absolute bottom-4 px-4 md:px-40">
     <p className="text-sm sm:text-lg md:text-xl font-semibold text-white">
-      Le Principal Organisme de Voyage en Inde pour Clients Internationaux
+    The Leading Travel Agency in India for International Clients
     </p>
   </div>
 
@@ -204,7 +204,7 @@ const complementry = [
     {/* Highlited events */}
     <div className='highlighted overflow-x-hidden overflow-y-hidden w-screen bg-gray-200 h-[720px] p-10 px-4 lg:px-40 '>
       <div className='flex flex-col p-6'>
-        <h1 className='font-medium text-3xl text-orange-700'>Destination Préférée des Français</h1>
+        <h1 className='font-medium text-3xl text-orange-700'>Favorite Destination of the French</h1>
         {/* <TranslateWidget></TranslateWidget> */}
         <p className='text-gray-600 text-xl font-medium'>Recommended camps by our Instructors</p>
         
@@ -268,30 +268,7 @@ const complementry = [
     </div>
 
     {/* Ratings and Reviews Section */}
-    <div className='Weekend overflow-x-hidden w-screen bg-gray-200 h-[900px] p-10 px-4 lg:px-40'>
-      <div className='flex flex-col p-6'>
-        <h1 className='font-medium text-3xl text-orange-700'>Ratings and Reviews</h1>
-        {/* <RazorpayBtn></RazorpayBtn> */}
-        <p className='text-gray-600 text-xl font-medium'>Experience the best with us</p>
-        <div className='flex flex-wrap justify-evenly'>
-          {[1, 2, 3, 4, 5, 6].map((_, index) => (
-            <div key={index} className='mt-6 w-1/3 p-4'>
-              <div className='flex gap-4 mb-4 items-center'>
-                <div className='bg-red-400 rounded-md h-12 w-16'>
-                  <img src="" alt="" />
-                </div>         
-                <div className='block'>
-                  <h1>Aditya Desai</h1>
-                </div>          
-              </div>
-              <p className='border-t-2 border-gray-400 pt-2 inline-block'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut blanditiis quisquam, molestias quis vitae eligendi hic quos ipsa consequatur, dignissimos dolore adipisci ducimus dicta mollitia deleniti quia atque amet fugiat?
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+   
 
     <div className='overflow-x-hidden w-screen'>
       <Footer />

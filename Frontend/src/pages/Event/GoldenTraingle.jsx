@@ -17,7 +17,7 @@ import DateComp from '../../components/DateComp';
 function GoldenTraingle() {
 
     const eventName = 'Golden Traingle'
-    const amount = 799;
+    const amount = 73026;
     const tagLine = 'Discover the Treasures of Agra'
     const duration = "8 days/ 7 nights"
     const age = "15-35 years"
@@ -277,7 +277,7 @@ function GoldenTraingle() {
                 style={{ pointerEvents: isVisible ? 'auto' : 'none' }}
                 >
                 <div className="flex flex-row justify-around items-center">
-                    <h1 className="font-quicksand">From €799 / person
+                    <h1 className="font-quicksand">From ₹73026 / person
                        <br /> <span  className="font-quicksand text-red-500">*Pay 25% now and book you seat</span>
                     </h1>
                     <button
@@ -359,7 +359,7 @@ function GoldenTraingle() {
                     </div>
                 </div>
 
-                <BookingCard price="799" eventName={eventName} amount={amount} />
+                <BookingCard price="73026" eventName={eventName} amount={amount} />
                 
             </div>
 

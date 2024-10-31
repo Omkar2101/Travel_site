@@ -70,7 +70,7 @@ export const BookingCard = memo(({ price, eventName, amount }) => {
 
   return (
       <div className="w-full lg:w-2/6 h-50 bg-white shadow-md p-5 mt-10 rounded-xl border border-gray-200">
-          <h1 className="font-quicksand text-2xl"><b>€{price}</b> / person</h1>
+          <h1 className="font-quicksand text-2xl"><b>₹{price}</b> / person</h1>
           <h2 className="font-quicksand mt-5 font-semibold">Includes</h2>
           <div className="flex flex-row justify-between">
               <div className="flex flex-col mt-3 gap-3">
