@@ -184,7 +184,7 @@ const complementry = [
 
   <div className="absolute bottom-4 px-4 md:px-40">
     <p className="text-sm sm:text-lg md:text-xl font-semibold text-white">
-      Le Principal Organisme de Voyage en Inde pour Clients Internationaux
+    The Leading Travel Agency in India for International Clients
     </p>
   </div>
 
@@ -204,7 +204,7 @@ const complementry = [
     {/* Highlited events */}
     <div className='highlighted overflow-x-hidden overflow-y-hidden w-screen bg-gray-200 h-[720px] p-10 px-4 lg:px-40 '>
       <div className='flex flex-col p-6'>
-        <h1 className='font-medium text-3xl text-orange-700'>Destination Préférée des Français</h1>
+        <h1 className='font-medium text-3xl text-orange-700'>Favorite Destination of the French</h1>
         {/* <TranslateWidget></TranslateWidget> */}
         <p className='text-gray-600 text-xl font-medium'>Recommended camps by our Instructors</p>
         
