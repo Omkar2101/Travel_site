@@ -218,7 +218,7 @@ const complementry = [
         ))}
       </div>
     </div>
-
+ 
     {/*Complementry events */}
     {/* Complementary Events */}
 <div className='Monsoon w-screen overflow-hidden bg-gray-800 h-auto p-10 px-4 lg:px-40'>
@@ -231,7 +231,7 @@ const complementry = [
   <div className="events flex items-center justify-start overflow-x-auto gap-4 p-4">
     {complementry.map((item, index) => (
       <div key={index} className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px]">
-        {console.log(item.topage)}
+        {/* {console.log(item.topage)} */}
         
         <EventCard onClick={()=>(Navigate(item.topage))} imageUrl={item.coverimg} heading={item.EventName} />
       </div>

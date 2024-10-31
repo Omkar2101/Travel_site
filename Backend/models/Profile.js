@@ -4,7 +4,7 @@ const ProfileSchema = new mongoose.Schema({
     firstName: {
         type: String,
         // Uncomment if required: required: [true, 'First name is required'],
-        // Uncomment if needed: trim: true,  // Trims whitespace from the input
+        // Uncomment if needed: trim: true,  // Trims whitespace from the input 
     },
     lastName: {
         type: String,
@@ -18,17 +18,7 @@ const ProfileSchema = new mongoose.Schema({
     gender: {
         type: String,
         required: [false, 'Gender is required'],
-        enum: ['Male', 'Female', 'Other'],  // Limits gender to these options
-    },
-    height: {
-        type: Number,
-        required: [false, 'Height is required'],
-        min: [30, 'Height must be at least 30 cm'],  // Validates minimum height
-    },
-    weight: {
-        type: Number,
-        required: [false, 'Weight is required'],
-        min: [1, 'Weight must be at least 1 kg'],  // Validates minimum weight
+        enum: ['male', 'female', 'other'],  // Limits gender to these options
     },
     email: {
         type: String,
@@ -39,7 +29,7 @@ const ProfileSchema = new mongoose.Schema({
     mobile: {
         type: String,
         required: [true, 'Mobile number is required'],
-        match: [/^\d{10}$/, 'Please enter a valid 10-digit mobile number'],  // Validates mobile number format
+        match: [/^\d{12}$/, 'Please enter a valid 10-digit mobile number'],  // Validates mobile number format
         unique: true,  // Ensures mobile number is unique
     },
     bloodGroup: {
