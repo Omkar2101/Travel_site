@@ -238,7 +238,7 @@ function Gwalior() {
                 style={{ pointerEvents: isVisible ? 'auto' : 'none' }}
                 >
                 <div className="flex flex-row justify-around items-center">
-                    <h1 className="font-quicksand">From €{amount} / person
+                    <h1 className="font-quicksand">From ₹{amount} / person
                        <br /> <span  className="font-quicksand text-red-500">*Pay 25% now and book you seat</span>
                     </h1>
                     <button
