@@ -16,7 +16,7 @@ import ImageSlider from '../../components/ImageSlider';
 function Varanasi() {
 
     const eventName = 'Varanasi Edition'
-    const amount = 1200;
+    const amount = 109676;
     const tagLine = 'Experience the Spiritual Journey'
     const duration = "7 Nights/ 8 Days"
     const age = "All ages welcome"

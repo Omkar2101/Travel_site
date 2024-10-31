@@ -16,7 +16,7 @@ import ImageSlider from '../../components/ImageSlider';
 function Gwalior() {
 
     const eventName = 'Palais et temples'
-    const amount = 1200;
+    const amount = 109676;
     const tagLine = 'Heritage of Central India'
     const duration = "7 Nights/ 8 Days"
     const age = "All ages welcome"

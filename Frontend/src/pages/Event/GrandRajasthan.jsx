@@ -16,7 +16,7 @@ import ImageSlider from '../../components/ImageSlider';
 function GrandRajasthan() {
 
     const eventName = 'The Grand Rajasthan et Taj'
-    const amount = 1600;
+    const amount = 146235
     const tagLine = 'Experience the Royal Grandeur of Rajasthan'
     const duration = "13 days/ 14 nights"
     const age = "All ages welcome"
