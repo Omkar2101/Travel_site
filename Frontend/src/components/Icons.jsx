@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import Cookies from 'js-cookie';
 import DateComp from './DateComp';
 
 export const DifficultyIcon = () => (
@@ -52,10 +52,20 @@ export const CalendarIcon = (props) => (
 
 
 export const BookingCard = memo(({ price, eventName, amount }) => {
-  const navigate = useNavigate(); // Move useNavigate inside the component
+  const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate('/participents', { state: { amount, eventName } });
+    const userId = Cookies.get('user_id');
+    
+    if (userId) {
+      // Proceed to the participants page if user_id exists
+      navigate('/participents', { state: { amount, eventName } });
+    } else {
+      // Prompt login or show an alert
+      // alert("Please log in to proceed with the booking.");
+      // Alternatively, navigate to login page if required
+      navigate('/login');
+    }
   };
 
   return (

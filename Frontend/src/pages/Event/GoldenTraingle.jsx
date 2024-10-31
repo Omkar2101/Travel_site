@@ -348,10 +348,14 @@ function GoldenTraingle() {
                         <p className="text-gray-500 font-quicksand text-sm font-medium">
                             {description}
                         </p>
-                        <button className="bg-gray-300 hover:bg-gray-400 text-orange-600 font-bold py-2 px-4 rounded inline-flex items-center mt-5">
+                        <button
+                            className="bg-gray-300 hover:bg-gray-400 text-orange-600 font-bold py-2 px-4 rounded inline-flex items-center mt-5"
+                            onClick={() => window.open('./Brochure/The_Golden_Triangle.pdf', '_blank')}
+                        >
                             <DownloadIcon className="w-4 h-4 mr-2" />
                             <span>Brochure</span>
                         </button>
+
                     </div>
                 </div>
 
