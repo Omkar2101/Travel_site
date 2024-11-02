@@ -22,6 +22,7 @@ import Yoga from './pages/Complementry/Yoga'
 import Blog from './pages/Blog';
 import CreateBlog from './components/CreateBlog';
 import BlogDetails from './components/BlogDetails';
+import Policy from "./pages/Policy"
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/create-blog" element={<CreateBlog />} />
             <Route path="/blog/:id" element={<BlogDetails />} />
+            <Route path="/privacypolicy" element={<Policy />} />
             
 
           </Routes>
