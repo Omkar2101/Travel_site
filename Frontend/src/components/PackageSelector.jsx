@@ -17,7 +17,7 @@ const PackageSelector = ({eventName, amount}) => {
         <div className='flex flex-row justify-between items-center p-3'>
          
           <div className="flex md:flex-row flex-col md:gap-2 gap-1 items-center">
-            <h1 className="md:text-lg text-sm">From €{amount} / person</h1>
+            <h1 className="md:text-lg text-sm">From ₹{amount} / person</h1>
   
           </div>
           <button

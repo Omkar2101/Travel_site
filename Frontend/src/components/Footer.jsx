@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="mb-4 text-gray-400">
               Discover India with Bonjour Inde Voyages. We offer curated travel experiences that bring you closer to the wonders of the globe.
             </p>
-            <h3 className="font-bold mb-2">Subscribe for Travel Deals</h3>
+            {/* <h3 className="font-bold mb-2">Subscribe for Travel Deals</h3>
             <div className="flex flex-col sm:flex-row">
               <input
                 type="email"
@@ -28,44 +28,44 @@ const Footer = () => {
               <button className="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 transition-colors">
                 Subscribe
               </button>
-            </div>
+            </div> */}
+            <h3 className="mb-4 text-red-400">*Refund processing time 5-7 working days</h3>
           </div>
           
           {/* Popular Destinations */}
           <div className="w-full md:w-1/2 lg:w-1/5 mb-8 md:mb-0">
             <h3 className="font-bold mb-4 text-orange-500 text-lg">Popular Destinations</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Jaipur, Rajasthan</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Delhi, India</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Jodhpur, Rajasthan</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Udaipur, Rajasthan</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Agra, Uttar Pradesh</a></li>
+              <li><a  className="hover:text-orange-500 cursor-pointer transition-colors">Jaipur, Rajasthan</a></li>
+              <li><a  className="hover:text-orange-500 cursor-pointer  transition-colors">Delhi, India</a></li>
+              <li><a  className="hover:text-orange-500 cursor-pointer  transition-colors">Jodhpur, Rajasthan</a></li>
+              <li><a  className="hover:text-orange-500 cursor-pointer  transition-colors">Udaipur, Rajasthan</a></li>
+              {/* <li><a  className="hover:text-orange-500 cursor-pointer transition-colors">Agra, Uttar Pradesh</a></li> */}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="w-full md:w-1/2 lg:w-1/5 mb-8 md:mb-0">
             <h3 className="font-bold mb-4 text-orange-500 text-lg">Get In Touch</h3>
-            <p className="mb-2">support@wanderlustvoyages.com</p>
-            <p className="mb-2">inquiries@wanderlustvoyages.com</p>
+            <p className="mb-2">accueil@bonjourinde.com</p>
             <h3 className="font-bold text-orange-500 mb-2 text-lg">Call Us</h3>
-            <p className="mb-2">Phone: +91 9876543210</p>
-            <p className="mb-2">Toll Free: 1800 789 012</p>
+            <p className="mb-2">Phone: +91 7726990969</p>
+            
 
             {/* Social Media Links */}
             <div className="mt-4">
               <h3 className="font-bold mb-4 text-lg">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-orange-500 hover:text-white transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=61555479664048" className="text-orange-500 hover:text-white transition-colors">
                   <FaFacebookF size={24} />
                 </a>
-                <a href="#" className="text-orange-500 hover:text-white transition-colors">
+                {/* <a href="#" className="text-orange-500 hover:text-white transition-colors">
                   <FaGoogle size={24} />
-                </a>
-                <a href="#" className="text-orange-500 hover:text-white transition-colors">
+                </a> */}
+                <a href="https://www.instagram.com/bonjourinde.fr?igsh=djkyNGl6djdqM3Nj&utm_source=qr" className="text-orange-500 hover:text-white transition-colors">
                   <FaInstagram size={24} />
                 </a>
-                <a href="#" className="text-orange-500 hover:text-white transition-colors">
+                <a href="https://youtube.com/@bonjourindevoyage?si=4XU9FxqekByoQUo4" className="text-orange-500 hover:text-white transition-colors">
                   <FaYoutube size={24} />
                 </a>
               </div>
@@ -77,22 +77,19 @@ const Footer = () => {
             <div>
               <h3 className="font-bold mb-4 text-orange-500 text-lg">Visit Us</h3>
               <p className="text-gray-400 mb-4">
-                456 Explorer's Lane, Near Traveler's Square, Jaipur, Rajasthan, India
+              Account General Deprtment, Babu ng,Ambica Ng Society, Chandlodia, Gandhinagar, Ahmedabad- 382481, Gujarat
               </p>
             </div>
 
-            <div className="w-full h-64">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.766328400472!2d75.7815589148967!3d26.912434983062684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db77f6b1bbcd5%3A0x5f539d85cf3c1c7f!2sTraveler&#39;s%20Square%2C%20Jaipur%2C%20Rajasthan%20302001%2C%20India!5e0!3m2!1sen!2sus!4v1625588028327!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen=""
-                aria-hidden="false"
-                tabIndex="0"
-                className="border-0 rounded-lg shadow-lg"
-              ></iframe>
-            </div>
+            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', maxWidth: '100%', background: '#ccc' }}>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3670.8392523087846!2d72.65598902421834!3d23.066354164695017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAccount%20General%20Department%2C%20Babu%20ng%2CAmbica%20Ng%20Society%2C%20Chandlodia%2C%20Gandhinagar%2C%20Ahmedabad-%20382481%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1730533189530!5m2!1sen!2sin"
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
           </div>
         </div>
 
