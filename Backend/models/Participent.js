@@ -20,16 +20,16 @@ const ParticipentSchema = new mongoose.Schema({
         required: [false, 'Gender is required'],
         enum: ['Male', 'Female', 'Other'],  // Limits gender to these options
     },
-    height: {
-        type: Number,
-        required: [false, 'Height is required'],
-        min: [30, 'Height must be at least 30 cm'],  // Validates minimum height
-    },
-    weight: {
-        type: Number,
-        required: [false, 'Weight is required'],
-        min: [1, 'Weight must be at least 1 kg'],  // Validates minimum weight
-    },
+    // height: {
+    //     type: Number,
+    //     required: [false, 'Height is required'],
+    //     min: [30, 'Height must be at least 30 cm'],  // Validates minimum height
+    // },
+    // weight: {
+    //     type: Number,
+    //     required: [false, 'Weight is required'],
+    //     min: [1, 'Weight must be at least 1 kg'],  // Validates minimum weight
+    // },
     email: {
         type: String,
         required: [false, 'Email is required'],
@@ -44,11 +44,11 @@ const ParticipentSchema = new mongoose.Schema({
     },
 
     
-    bloodGroup: {
-        type: String,
-        required: [false, 'Blood group is required'],
-        enum: ['A+', 'A-', 'B', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'I don\'t know'],  // Limits blood group to these options
-    }, 
+    // bloodGroup: {
+    //     type: String,
+    //     required: [false, 'Blood group is required'],
+    //     enum: ['A+', 'A-', 'B', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'I don\'t know'],  // Limits blood group to these options
+    // }, 
     address: {
         type: String,
         required: [false, 'Address is required'],
@@ -77,6 +77,10 @@ const ParticipentSchema = new mongoose.Schema({
     amount: {
         type: String,
         required: true
+    },
+    selectedDate: {
+        type: Date,
+        required: [true, 'Booking date is required'] // Make it required if necessary
     },
 }, {
     timestamps: true,  // Adds createdAt and updatedAt timestamps automatically

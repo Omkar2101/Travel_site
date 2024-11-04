@@ -4,12 +4,14 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
 
-function DateComp() {
+function DateComp({setDate}) {
   const [selectDate, setSelectDate] = useState(dayjs(null)); // Use a valid format like "YYYY-MM-DD"
 
   const handleChange = (date) => {
     setSelectDate(date); // Directly set the date
-    console.log(selectDate.$d);
+    // console.log(selectDate.$d);
+    setDate(date.format("YYYY-MM-DD"));
+    // console.log(date ? date.format("YYYY-MM-DD") : "No date selected");
   };
 
   return (

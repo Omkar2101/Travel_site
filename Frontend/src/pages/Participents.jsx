@@ -17,9 +17,10 @@ function Participants() {
   }, []);
 
   const location = useLocation();
-  const {amount, eventName } = location.state || {};
+  const {amount, eventName, selectedDate } = location.state || {};
   console.log('Amount is: ', amount)
   console.log('Event Name is: ', eventName)
+  console.log('Date is: ', selectedDate)
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 
@@ -71,9 +72,9 @@ function Participants() {
       if (!participant.email) {
         return 'E-mail is required';
       }
-      if (!participant.bloodGroup) {
-        return 'Blood Group is required';
-      }
+      // if (!participant.bloodGroup) {
+      //   return 'Blood Group is required';
+      // }
       if (!participant.mobile) {
         return 'Mobile Number is required';
       }
@@ -97,6 +98,7 @@ function Participants() {
         userid,
         eventName: eventName, // Replace with actual event name
         amount: amount, // Replace with actual amount
+        selectedDate: selectedDate,
       }));
 
       console.log("participantsData is: ", dataToSend);
@@ -141,7 +143,7 @@ function Participants() {
       <div className="flex flex-col bg-white-100">
         <div className="mt-6 p-6">
           {bug[0] && <p className='text-red-600 flex justify-center items-center gap-1 mb-5'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-2">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg>
             {bug[0]}
@@ -155,7 +157,7 @@ function Participants() {
                     onClick={() => removeParticipantForm(index)}
                     className="mt-4 px-4 py-2 flex flex-row items-center gap-1 bg-red-500 text-white rounded-md hover:bg-red-600"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4">
                       <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                     </svg>
                     Remove

@@ -32,11 +32,11 @@ const ProfileSchema = new mongoose.Schema({
         match: [/^\d{12}$/, 'Please enter a valid 10-digit mobile number'],  // Validates mobile number format
         unique: true,  // Ensures mobile number is unique
     },
-    bloodGroup: {
-        type: String,
-        required: [false, 'Blood group is required'],
-        enum: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'I don\'t know'],  // Limits blood group to these options
-    },
+    // bloodGroup: {
+    //     type: String,
+    //     required: [false, 'Blood group is required'],
+    //     enum: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', 'I don\'t know'],  // Limits blood group to these options
+    // },
     address: {
         type: String,
         required: [false, 'Address is required'],
