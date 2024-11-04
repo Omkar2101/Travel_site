@@ -95,7 +95,7 @@ const Footer = () => {
 
         <div className="text-center mt-8">
           <p className="text-gray-400">
-            Copyright © 2024 BONJOUR INDE Voyages
+            Copyright © 2024 BONJOUR INDE VOYAGE PRIVATE LIMITED
           </p>
         </div>
       </div>
