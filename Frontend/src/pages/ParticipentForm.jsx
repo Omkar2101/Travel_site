@@ -7,13 +7,13 @@ function ParticipantForm({ index, updateParticipantData }) {
     lastName: '',
     birthDate: '',
     gender: '',
-    height: '',
-    weight: '',
+    // height: '',
+    // weight: '',
     passportnumber: '', 
     email: '',
     idProof: null,
     mobile: '',
-    bloodGroup: '',
+    // bloodGroup: '',
   });
 
   const handleChange = (e) => {
@@ -51,7 +51,7 @@ function ParticipantForm({ index, updateParticipantData }) {
       {/* Profile Picture */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Profile Picture <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Profile Picture <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -73,7 +73,7 @@ function ParticipantForm({ index, updateParticipantData }) {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         <div>
-          <label className=" text-sm font-medium text-gray-700 mb-1 flex flex-row items-center gap-1">First Name <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className=" text-sm font-medium text-gray-700 mb-1 flex flex-row items-center gap-1">First Name <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -86,7 +86,7 @@ function ParticipantForm({ index, updateParticipantData }) {
           />
         </div>
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Last Name <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Last Name <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -99,7 +99,7 @@ function ParticipantForm({ index, updateParticipantData }) {
           />
         </div>
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Birth Date <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Birth Date <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -112,7 +112,7 @@ function ParticipantForm({ index, updateParticipantData }) {
           />
         </div>
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Gender <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Gender <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <select
@@ -128,7 +128,7 @@ function ParticipantForm({ index, updateParticipantData }) {
             <option value="Other">Other</option>
           </select>
         </div>
-        <div>
+        {/* <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Height (cm)</label>
           <input
             type="number"
@@ -137,8 +137,8 @@ function ParticipantForm({ index, updateParticipantData }) {
             onChange={handleChange}
             className="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Weight (kg)</label>
           <input
             type="number"
@@ -147,9 +147,9 @@ function ParticipantForm({ index, updateParticipantData }) {
             onChange={handleChange}
             className="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"
           />
-        </div>
+        </div> */}
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Passport Number <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Passport Number <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -162,7 +162,7 @@ function ParticipantForm({ index, updateParticipantData }) {
           />
         </div>
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Email <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Email <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -174,8 +174,8 @@ function ParticipantForm({ index, updateParticipantData }) {
             className="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"
           />
         </div>
-        <div>
-          <label className="flex flex-row gap-1 items-center text-sm font-medium text-gray-700 mb-1">Blood Group <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+        {/* <div>
+          <label className="flex flex-row gap-1 items-center text-sm font-medium text-gray-700 mb-1">Blood Group <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input
@@ -186,9 +186,9 @@ function ParticipantForm({ index, updateParticipantData }) {
             required
             className="mt-1 p-2 block w-full border rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"
           />
-        </div>
+        </div> */}
         <div>
-          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Mobile <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" class="size-1.5">
+          <label className="flex flex-row items-center gap-1 text-sm font-medium text-gray-700 mb-1">Mobile <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#a10534" className="size-1.5">
               <path fill-rule="evenodd" d="M8 1.75a.75.75 0 0 1 .692.462l1.41 3.393 3.664.293a.75.75 0 0 1 .428 1.317l-2.791 2.39.853 3.575a.75.75 0 0 1-1.12.814L7.998 12.08l-3.135 1.915a.75.75 0 0 1-1.12-.814l.852-3.574-2.79-2.39a.75.75 0 0 1 .427-1.318l3.663-.293 1.41-3.393A.75.75 0 0 1 8 1.75Z" clip-rule="evenodd" />
             </svg></label>
           <input

@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React, {memo, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import DateComp from './DateComp';
@@ -53,13 +53,14 @@ export const CalendarIcon = (props) => (
 
 export const BookingCard = memo(({ price, eventName, amount }) => {
   const navigate = useNavigate();
+  const [selectedDate, setSelectedDate] = useState(null);
 
   const handleNavigation = () => {
     const userId = Cookies.get('user_id');
     
     if (userId) {
       // Proceed to the participants page if user_id exists
-      navigate('/participents', { state: { amount, eventName } });
+      navigate('/participents', { state: { amount, eventName, selectedDate } });
     } else {
       // Prompt login or show an alert
       // alert("Please log in to proceed with the booking.");
@@ -67,6 +68,7 @@ export const BookingCard = memo(({ price, eventName, amount }) => {
       navigate('/login');
     }
   };
+
 
   return (
       <div className="w-full lg:w-2/6 h-50 bg-white shadow-md p-5 mt-10 rounded-xl border border-gray-200">
@@ -97,7 +99,7 @@ export const BookingCard = memo(({ price, eventName, amount }) => {
                 >
                     Book Now
                 </button>
-                <DateComp></DateComp>
+                <DateComp setDate={setSelectedDate}/>
           </div>
       </div>
   );

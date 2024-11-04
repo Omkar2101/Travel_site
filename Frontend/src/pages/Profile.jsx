@@ -33,7 +33,7 @@ function Profile() {
     gender: "",
     email: "",
     mobile: "",
-    bloodGroup: "",
+    // bloodGroup: "",
     address: "",
     userid: "", // Initialize userid in the formData state
     profilePicture: "",
@@ -116,7 +116,7 @@ function Profile() {
           gender: "",
           email: "",
           mobile: "",
-          bloodGroup: "",
+          // bloodGroup: "",
           address: "",
           userid: "", // Reset userid after form submission
           profilePicture: "",
@@ -314,7 +314,7 @@ function Profile() {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Blood Group
                 </label>
@@ -335,13 +335,13 @@ function Profile() {
                   <option value="AB+">AB+</option>
                   <option value="AB-">AB-</option>
                 </select>
-              </div>
+              </div> */}
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Address
                 </label>
-                <input
+                <textarea
                   type="text"
                   name="address"
                   value={formData.address}
