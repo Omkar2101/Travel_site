@@ -18,7 +18,7 @@
 //         script.id = scriptId; // Assign the current scriptId to the script element
 
 //         script.onload = () => {
-//             setIsLoading(false); // Stop loading when script is loaded
+//             setIsL oading(false); // Stop loading when script is loaded
 //         };
 
 //         document.getElementById('razorpay-button-container').appendChild(script);

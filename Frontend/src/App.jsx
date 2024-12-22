@@ -24,7 +24,7 @@ import CreateBlog from './components/CreateBlog';
 import BlogDetails from './components/BlogDetails';
 import Policy from "./pages/Policy"
 
-const App = () => {
+const App = () => { 
   return (
     <Router>
      

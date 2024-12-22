@@ -9,7 +9,7 @@ const PackageSelector = ({eventName, amount}) => {
       navigate('/participents', { state: {amount, eventName } });
     
   };
-
+ 
   
   return (
     <div className="px-4 md:px-40 font-quicksand bg-white">

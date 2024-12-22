@@ -51,24 +51,81 @@ export const CalendarIcon = (props) => (
 
 
 
+// export const BookingCard = memo(({ price, eventName, amount }) => {
+//   const navigate = useNavigate();
+//   const [selectedDate, setSelectedDate] = useState(null);
+
+//   const handleNavigation = () => {
+//     const userId = Cookies.get('user_id');
+    
+//     if (userId) {
+//       // Proceed to the participants page if user_id exists
+//       navigate('/participents', { state: { amount, eventName, selectedDate } });
+//     } else {
+//       // Prompt login or show an alert
+//       // alert("Please log in to proceed with the booking.");
+//       // Alternatively, navigate to login page if required
+//       navigate('/login');
+//     }
+//   };
+
+
+//   return (
+//       <div className="w-full lg:w-2/6 h-50 bg-white shadow-md p-5 mt-10 rounded-xl border border-gray-200">
+//           <h1 className="font-quicksand text-2xl"><b>€{price}</b> / person</h1>
+//           <h2 className="font-quicksand mt-5 font-semibold">Includes</h2>
+//           <div className="flex flex-row justify-between">
+//               <div className="flex flex-col mt-3 gap-3">
+//                   <BookingDetailItem title="Travelling" iconSrc="./bus.png" />
+//                   <BookingDetailItem title="Stay" icon={
+//                       <StayIcon className="size-6" />
+//                   } />
+//                   <BookingDetailItem title="Guide" icon={
+//                       <GuideIcon className="size-6" />
+//                   } />
+//               </div>
+//               <div className="flex flex-col mt-3 gap-3">
+//                   <BookingDetailItem title="Food" iconSrc="./restaurant.png" />
+//                   <BookingDetailItem title="Activities" iconSrc="./playing.png" />
+//                   <BookingDetailItem title="First Aid" iconSrc="./kit.png" />
+//               </div>
+//           </div>
+
+//           <div>
+//                 <button
+//                     onClick={handleNavigation}
+//                     type="button"
+//                     className="font-quicksand mt-3 w-full text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 font-medium rounded-xl text-lg px-5 py-2.5 me-2 dark:bg-orange-600 dark:hover:bg-orange-700 focus:outline-none dark:focus:ring-orange-800"
+//                 >
+//                     Book Now
+//                 </button>
+//                 <DateComp setDate={setSelectedDate}/>
+//           </div>
+//       </div>
+//   );
+// });
+
 export const BookingCard = memo(({ price, eventName, amount }) => {
   const navigate = useNavigate();
   const [selectedDate, setSelectedDate] = useState(null);
+  const [showWarning, setShowWarning] = useState(false);
 
   const handleNavigation = () => {
     const userId = Cookies.get('user_id');
     
+    if (!selectedDate) {
+      setShowWarning(true); // Show warning if date is not selected
+      return;
+    }
+
     if (userId) {
       // Proceed to the participants page if user_id exists
       navigate('/participents', { state: { amount, eventName, selectedDate } });
     } else {
       // Prompt login or show an alert
-      // alert("Please log in to proceed with the booking.");
-      // Alternatively, navigate to login page if required
       navigate('/login');
     }
   };
-
 
   return (
       <div className="w-full lg:w-2/6 h-50 bg-white shadow-md p-5 mt-10 rounded-xl border border-gray-200">
@@ -77,12 +134,8 @@ export const BookingCard = memo(({ price, eventName, amount }) => {
           <div className="flex flex-row justify-between">
               <div className="flex flex-col mt-3 gap-3">
                   <BookingDetailItem title="Travelling" iconSrc="./bus.png" />
-                  <BookingDetailItem title="Stay" icon={
-                      <StayIcon className="size-6" />
-                  } />
-                  <BookingDetailItem title="Guide" icon={
-                      <GuideIcon className="size-6" />
-                  } />
+                  <BookingDetailItem title="Stay" icon={<StayIcon className="size-6" />} />
+                  <BookingDetailItem title="Guide" icon={<GuideIcon className="size-6" />} />
               </div>
               <div className="flex flex-col mt-3 gap-3">
                   <BookingDetailItem title="Food" iconSrc="./restaurant.png" />
@@ -92,6 +145,10 @@ export const BookingCard = memo(({ price, eventName, amount }) => {
           </div>
 
           <div>
+                {showWarning && (
+                  <p className="text-red-500 text-sm mt-2">Please select a date for booking.</p>
+                )}
+                <DateComp setDate={setSelectedDate} />
                 <button
                     onClick={handleNavigation}
                     type="button"
@@ -99,12 +156,10 @@ export const BookingCard = memo(({ price, eventName, amount }) => {
                 >
                     Book Now
                 </button>
-                <DateComp setDate={setSelectedDate}/>
-          </div>
+          </div> 
       </div>
   );
 });
-
 
 export const DetailItem = memo(({ icon, title, description }) => {
   return (

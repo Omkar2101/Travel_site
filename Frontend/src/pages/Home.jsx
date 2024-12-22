@@ -226,7 +226,7 @@ const complementry = [
     <h1 className='font-medium text-3xl text-orange-700'>Complementary Events</h1>
     <p className='text-gray-600 text-xl font-medium'>Recommended camps by our Instructors</p>
   </div>
-  
+   
   {/* Events Container */}
   <div className="events flex items-center justify-start overflow-x-auto gap-4 p-4">
     {complementry.map((item, index) => (

@@ -20,7 +20,7 @@ function Dashboard() {
   // console.log(import.meta.env);
 
 
-
+ 
   const {amount, eventName } = location.state || {};
   console.log("from dash",eventName);
   

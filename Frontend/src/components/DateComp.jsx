@@ -13,7 +13,7 @@ function DateComp({setDate}) {
     setDate(date.format("YYYY-MM-DD"));
     // console.log(date ? date.format("YYYY-MM-DD") : "No date selected");
   };
-
+ 
   return (
     <div className="p-4">
       <label className="block text-lg font-medium text-gray-700 mb-1">

@@ -21,7 +21,7 @@ const WhatsApp = ({ phoneNumber, message }) => {
         className="w-12 h-12 "
       />
       
-    </a>
+    </a> 
 
 
    
