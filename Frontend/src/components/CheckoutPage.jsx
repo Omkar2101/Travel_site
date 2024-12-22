@@ -45,7 +45,7 @@ const CheckoutPage = () => {
               <p className="text-gray-700"><strong>Bank Name:</strong> XYZ Bank</p>
               <p className="text-gray-700"><strong>IFSC Code:</strong> XYZB0001234</p>
               <p className="text-gray-700"><strong>Phone Number:</strong> +1-234-567-8901</p>
-              <p className="text-gray-700"><strong>Amount:</strong>  €</p>
+              <p className="text-gray-700"><strong>Amount:</strong>  ₹</p>
               
             </div>
             <h1 className='text-red-400 font-semibold'>*Please share the screenshot of payment to the provided mobile number</h1>
