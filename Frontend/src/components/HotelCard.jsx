@@ -17,7 +17,7 @@ const HotelCard = ({ imageUrl, heading,onClick }) => {
           src={imageUrl}
           alt={heading}
         />
-        
+         
 
       </div>
     );

@@ -20,7 +20,7 @@
 //     if (!res) {
 //       alert("Failed to load Razorpay. Please check your internet connection.");
 //       return;
-//     }
+//     } 
 
 //     // Create an order by calling backend
 //     const result = await axios.post(

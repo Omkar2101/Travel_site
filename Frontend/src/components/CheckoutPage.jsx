@@ -12,7 +12,7 @@ const CheckoutPage = () => {
   console.log('Amount is: ', totalamount)
   const amountToPay =totalamount
 
-  return (
+  return ( 
     <>
     
     <div className='overflow-x-hidden font-quicksand'>

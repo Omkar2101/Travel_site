@@ -23,7 +23,7 @@
 //       side: "right",
 //       bgColor: "bg-gray-800",
 //       img: Nirbhaysinghimg, // Image URL for section 3
-//     },
+//     }, 
 //     {
 //       id: 4,
 //       side: "left",

@@ -6,7 +6,7 @@ const AttractionCard = memo(({ img, tagName }) => {
             <img src={img} alt={tagName} className="w-full h-full rounded-lg" loading="lazy" />
             <h1 className="font-medium mt-2">{tagName}</h1>
         </div>
-    );
+    ); 
 });
 
 const Attractions = ({ attractions }) => {

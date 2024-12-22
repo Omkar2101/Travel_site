@@ -17,7 +17,7 @@ const Footer = () => {
             </h2>
             <p className="mb-4 text-gray-400">
               Discover India with Bonjour Inde Voyages. We offer curated travel experiences that bring you closer to the wonders of the globe.
-            </p>
+            </p> 
             <h3 className="font-bold mb-2">Subscribe for Travel Deals</h3>
             <div className="flex flex-col sm:flex-row">
               <input

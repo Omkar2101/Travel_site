@@ -6,7 +6,7 @@
 // import Eventcards from '../components/Eventcards'
 // import { useNavigate } from 'react-router-dom'
 // function Events() {
-
+ 
 //   const navigate = useNavigate();
 
 //   const events =[

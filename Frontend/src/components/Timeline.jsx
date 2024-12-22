@@ -23,7 +23,7 @@ const TimelineItem = memo(({ day, image, details, heading, description }) => {
                 <div className="w-2/5 h-48 md:w-2/5 md:h-80 overflow-hidden">
                     <img src={image} alt={`Schedule for Day ${day}`} className="w-full h-full object-cover rounded-lg" loading="lazy" />
                 </div>
-            )}
+            )} 
         </li>
     );
 });

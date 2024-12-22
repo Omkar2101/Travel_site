@@ -11,7 +11,7 @@ const places=[
     {imageUrl:"https://images.unsplash.com/photo-1706961121783-4ae6c933983a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGF3YSUyMG1haGFsJTIwamFpcHVyJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D",heading:"Villes sacrées du Gange : édition Varanasi"}
 ]
 
-
+ 
 // export default EventCard;
 const EventCard = ({ imageUrl, heading,onClick }) => {
   return (

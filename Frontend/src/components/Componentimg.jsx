@@ -10,7 +10,7 @@ const images = [
   { id: 5, url: 'https://via.placeholder.com/600x400', title: 'Image 5' },
   { id: 6, url: 'https://via.placeholder.com/600x400', title: 'Image 6' },
 ];
-
+ 
 const Componentimg = () => {
   return (
     <div className="container mx-auto px-4 py-12">

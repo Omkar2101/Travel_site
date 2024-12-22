@@ -20,7 +20,7 @@ import Jeep from './pages/Complementry/Jeep'
 import Paint from './pages/Complementry/Paint'
 import Yoga from './pages/Complementry/Yoga'
 
-const App = () => {
+const App = () => { 
   return (
     <Router>
      

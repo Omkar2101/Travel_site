@@ -20,7 +20,7 @@ const GoogleTranslate = () => {
       const translateElement = document.getElementById('google_translate_element');
       if (translateElement) {
         translateElement.innerHTML = '';
-      }
+      } 
 
       new window.google.translate.TranslateElement({
         pageLanguage: 'en',

@@ -13,7 +13,7 @@
 //       './Complementry/Jeep_safari/photo2jpg.jpg',
         
 // ]
-
+ 
 //   return (
 //     <div className="container mx-auto my-10 px-4">
 //       {/* <h2 className="text-4xl font-bold text-center mb-8">Traveller Gallery</h2> */}

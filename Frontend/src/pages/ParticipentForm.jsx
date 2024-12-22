@@ -40,7 +40,7 @@ function ParticipantForm({ index, updateParticipantData }) {
     e.preventDefault();
     // Additional submission logic if needed
   };
-
+ 
   return (
     <form
       className="max-w-4xl mx-auto mt-6 mb-6 p-12 font-quicksand bg-gray-100 shadow-md rounded-lg"

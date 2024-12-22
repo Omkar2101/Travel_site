@@ -15,7 +15,7 @@ const TimelineItem = memo(({ day, image, details, heading, description }) => {
         </li>
     );
 });
-
+ 
 // const Modal = memo(({ day, details, heading }) => {
 //     return (
 //         <label

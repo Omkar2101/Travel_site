@@ -19,7 +19,7 @@ function Rules({inclusion, exclusion}) {
                                     {item}
                                 </li>
                             ))}
-                        </ul>
+                        </ul> 
                         <h1 className="text-gray-600 mt-4">Exclusions:</h1>
                         <ul className="text-gray-500 text-sm space-y-2">
                             {exclusion.map((item) => (

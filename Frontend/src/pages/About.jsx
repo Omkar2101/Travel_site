@@ -139,7 +139,7 @@
 //               Our diverse clientele includes travelers from France, Italy, the USA, Australia, and Spain. We are proud to give back to the community by donating bicycles, books, and stationery to underprivileged children in small villages, reflecting our commitment to positivity and trust.
 //             </p>
 //           </motion.div>
-
+ 
 //           <motion.p
 //             className="text-lg font-quicksand text-gray-800 mt-12"
 //             initial={{ opacity: 0, y: 20 }}

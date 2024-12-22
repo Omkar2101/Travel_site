@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import ParticipantForm from './ParticipentForm';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
-
+ 
 
 
 function Participants() {

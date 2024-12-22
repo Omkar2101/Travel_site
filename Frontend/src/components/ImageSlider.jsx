@@ -16,7 +16,7 @@ const ImageSlider = ({ images }) => {
         right: !isAtEnd,
       });
     };
-  
+   
     const handleResize = () => updateArrowVisibility();
     const handleScroll = () => updateArrowVisibility();
   
